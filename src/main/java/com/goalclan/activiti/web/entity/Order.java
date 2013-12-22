@@ -16,6 +16,10 @@ public class Order {
 
 	private String orderNumber;
 
+	private String user;
+
+	private String processInstanceId;
+
 	public int getId() {
 		return id;
 	}
@@ -30,6 +34,22 @@ public class Order {
 
 	public void setOrderNumber(String orderNumber) {
 		this.orderNumber = orderNumber;
+	}
+
+	public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public String getProcessInstanceId() {
+		return processInstanceId;
+	}
+
+	public void setProcessInstanceId(String processInstanceId) {
+		this.processInstanceId = processInstanceId;
 	}
 
 }

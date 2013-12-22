@@ -14,10 +14,8 @@ public class OrderService {
 	private EntityManager entityManager;
 
 	@Transactional
-	public void saveOrder() {
-		Order order = new Order();
-		order.setOrderNumber("sodxxxx001");
+	public Order saveOrder(Order order) {
 		entityManager.persist(order);
-		entityManager.flush();
+		return order;
 	}
 }
